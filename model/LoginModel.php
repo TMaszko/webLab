@@ -1,5 +1,5 @@
 <?php
-include 'model/Model.php';
+require_once 'model/Model.php';
 include 'utils/Validate.php';
 class LoginModel extends Model {
 	private $values, $errors;

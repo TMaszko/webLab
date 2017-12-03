@@ -1,16 +1,5 @@
 <?php 
-			session_start();
-			
-?>
-<!DOCTYPE html>
-<html>
-   <head>
-      <meta charset = "utf-8">
-      <title>My diary</title>
-   </head>
-   <body>
-      <h1>
-      	Witaj na aplikacji MyDiary <?php echo '</br>'.$_SESSION['username'].'</br>'.$_SESSION['password']?>
-      </h1>
-   </body>
-</html>
+	include 'controller/IndexController.php';
+	session_start();
+	$controller = new IndexController();
+	$controller->login($_SESSION, $_COOKIE);
