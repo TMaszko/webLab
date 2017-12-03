@@ -13,5 +13,6 @@
       		<input type="submit" value="Change color">
       	</form>
       </h1>
+      <a href="logout.php"> Wyloguj sie</a>
    </body>
 </html>
