@@ -1,3 +1,7 @@
+<?php 
+			session_start();
+			
+?>
 <!DOCTYPE html>
 <html>
    <head>
@@ -6,7 +10,7 @@
    </head>
    <body>
       <h1>
-      	Witaj na aplikacji MyDiary <?php echo "'lol'" ?>
+      	Witaj na aplikacji MyDiary <?php echo '</br>'.$_SESSION['username'].'</br>'.$_SESSION['password']?>
       </h1>
    </body>
 </html>

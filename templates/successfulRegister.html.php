@@ -5,11 +5,16 @@
       <title>My diary</title>
    </head>
    <body>
-   	<h1>You've been successfully registered! 
+   	<h1>
+   		You've been successfully registered! 
    		<?php echo preg_replace_callback('/([a-z])/',
    		function($matches){ 
    			return strtoupper($matches[0]);
-   	}, $model->getName(), 1)?> </h1>
+   	}, $model->getName(), 1)?> 
+   </h1>
+   		<h2>
+   			<?php echo 'Twoj adres ip: '.$_SERVER['HTTP_HOST']; ?>
+   		</h2>
    		<div>
 			Username: <?php echo $model->getUserName()?>
 		</div>
